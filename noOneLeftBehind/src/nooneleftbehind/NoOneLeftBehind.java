@@ -5,6 +5,8 @@
  */
 package nooneleftbehind;
 
+import byui.cit260.dsTest.model.Floor;
+import byui.cit260.dsTest.model.GateKeeper;
 import byui.cit260.noOneLeftBehind.model.*;
 
 /**
@@ -20,8 +22,12 @@ public class NoOneLeftBehind {
         // TODO code application logic here
         Room room1 = new Room();
         savePlayer player1 = new savePlayer();
+        GateKeeper gateKeeper = new GateKeeper();
+        Floor floor3 = new Floor();
         player1.setName("BillyBob");
         player1.setScore(7);
+        gateKeeper.setHasSolved(true);
+        floor3.setRoomNumber(true);
         String playerInfo = player1.toString();
         System.out.println(playerInfo);
         

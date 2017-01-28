@@ -7,7 +7,7 @@ package byui.cit260.noOneLeftBehind.model;
 
 import java.io.Serializable;
 
-/**
+/****
  *
  * @author DS
  */
@@ -44,7 +44,8 @@ public class Room implements Serializable{
     public void setHasCleared(boolean hasCleared) {
         this.hasCleared = hasCleared;
         
-        
+     
+             
         
     }
 
