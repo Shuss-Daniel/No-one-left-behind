@@ -3,25 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.noOneLeftBehind.model;
+package byui.cit260.noOneLeftBehind.control;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
- * @author DS
+ * @author Alexis
  */
-public class savePlayer implements Serializable{
+public class Game implements Serializable {
     
-    //Private member variables
+     //Private member variables
     private String name;
-    private double score;
 
-    //Constructor
-    public savePlayer() {
+    //Empty constructor
+    public Game() {
     }
-
     
     //Getters and Setters
     public String getName() {
@@ -32,28 +30,22 @@ public class savePlayer implements Serializable{
         this.name = name;
     }
 
-    public double getScore() {
-        return score;
-    }
-
-    public void setScore(double score) {
-        this.score = score;
-    }
-
+    //Hash code function
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 97 * hash + Objects.hashCode(this.name);
-        hash = 97 * hash + (int) (Double.doubleToLongBits(this.score) ^ (Double.doubleToLongBits(this.score) >>> 32));
+        int hash = 7;
+        hash = 37 * hash + Objects.hashCode(this.name);
         return hash;
     }
+    
 
+    //To String function
     @Override
     public String toString() {
-        return "savePlayer{" + "name=" + name + ", score=" + score + '}';
+        return "Game{" + "name=" + name + '}';
     }
 
-    
+    //Equals function
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -65,12 +57,11 @@ public class savePlayer implements Serializable{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final savePlayer other = (savePlayer) obj;
-        if (Double.doubleToLongBits(this.score) != Double.doubleToLongBits(other.score)) {
-            return false;
-        }
+        final Game other = (Game) obj;
         return Objects.equals(this.name, other.name);
     }
-    
+
+
+
     
 }
