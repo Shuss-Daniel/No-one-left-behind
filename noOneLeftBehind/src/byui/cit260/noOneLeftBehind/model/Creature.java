@@ -125,13 +125,12 @@ public class Creature implements Serializable{
       
     
     
-    //Inventory method
+    //Inventory method - Adds imtems to inventory
     public void addInventory(String itemName, int itemValue) {
         inventory.put(itemName, itemValue);
 
     }
-    
- 
+
     
     
     
