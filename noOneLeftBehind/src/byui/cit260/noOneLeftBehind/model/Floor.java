@@ -19,25 +19,32 @@ import java.io.Serializable;
 public class Floor implements Serializable{
     
 // class instance variables
-    private boolean roomNumber;
+    private int roomNumber;
  
 // default constructor
     public Floor() {
     }
     
 // Getters and Setters
-    public boolean isRoomNumber() {
+    public int isRoomNumber() {
         return roomNumber;
     }
 
-    public void setRoomNumber(boolean roomNumber) {
+    public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }
 
+   // @Override
+   // public int hashCode() {
+   //     int hash = 3;
+   //     hash = 59 * hash + (this.roomNumber ? 1 : 0);
+   //     return hash;
+   // }
+
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 59 * hash + (this.roomNumber ? 1 : 0);
+        int hash = 7;
+        hash = 73 * hash + this.roomNumber;
         return hash;
     }
 

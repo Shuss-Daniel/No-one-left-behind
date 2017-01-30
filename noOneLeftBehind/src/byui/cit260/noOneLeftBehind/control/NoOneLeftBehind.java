@@ -66,7 +66,7 @@ public class NoOneLeftBehind {
         
         //Floor instance
         Floor floor3 = new Floor();
-        floor3.setRoomNumber(true);
+        floor3.setRoomNumber(3);
         
         
 
@@ -75,6 +75,9 @@ public class NoOneLeftBehind {
         System.out.println(gameInfo);
         System.out.println(creatInfo);
         System.out.println(mapInfo);
+        System.out.println(floor3);
+        System.out.println(gateKeeper);
+        
         
         
     }
