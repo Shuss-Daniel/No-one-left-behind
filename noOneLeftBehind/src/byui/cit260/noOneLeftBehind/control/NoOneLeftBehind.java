@@ -72,7 +72,19 @@ public class NoOneLeftBehind {
         Equipment equipOne = new Equipment();
         equipOne.setWeapon("sword");
         equipOne.setArmor("shield");
-        equipOne.setEquiped(true);    
+        equipOne.setEquiped(true); 
+        
+        //Enemy instance
+        Enemy enemyOne = new Enemy();
+        enemyOne.setGhost("ghost");
+        enemyOne.setSkeleton("skeleton");
+        enemyOne.setVampire("vampire");
+        enemyOne.setZombie("zombie");
+        
+        //Item instance
+        Item canEquip = new Item();
+        canEquip.setEquipable("yes");
+        
         
        //Out put instances of each class
         System.out.println(playerInfo);
@@ -82,7 +94,8 @@ public class NoOneLeftBehind {
         System.out.println(floor3);
         System.out.println(gateKeeper);
         System.out.println(equipOne);
-        
+        System.out.println(enemyOne);
+        System.out.println(canEquip);
         
         
     }
