@@ -68,8 +68,12 @@ public class NoOneLeftBehind {
         Floor floor3 = new Floor();
         floor3.setRoomNumber(3);
         
+        //Equipment instance
+        Equipment equipOne = new Equipment();
+        equipOne.setWeapon("sword");
+        equipOne.setArmor("shield");
+        equipOne.setEquiped(true);    
         
-
        //Out put instances of each class
         System.out.println(playerInfo);
         System.out.println(gameInfo);
@@ -77,6 +81,7 @@ public class NoOneLeftBehind {
         System.out.println(mapInfo);
         System.out.println(floor3);
         System.out.println(gateKeeper);
+        System.out.println(equipOne);
         
         
         
