@@ -11,38 +11,20 @@ import java.io.Serializable;
  *
  * @author Alexis
  */
-public class Player implements Serializable {
+public class Player extends Creature implements Serializable {
+
+    public Player() {
+        super();
+        int hitPoints = getHitPoints();
+        
+    }
     
     //member varibles
-    private String _name;
-    private int _bestTime;
 
-    public Player() { }
-    
-    
-    
-    public String getName() {
-        return _name;
-    }
-
-    public void setName(String _name) {
-        this._name = _name;
-    }
-
-    public int getBestTime() {
-        return _bestTime;
-    }
-
-    public void setBestTime(int _bestTime) {
-        this._bestTime = _bestTime;
-    } 
-    
-    
-    
-    
- 
 
 
     
+      
     
+
 }

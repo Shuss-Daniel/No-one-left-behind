@@ -40,10 +40,10 @@ public class NoOneLeftBehind {
         player1.setScore(7);
         String playerInfo = player1.toString();
         
-        //Game instance
-        Game game1 = new Game();
-        game1.setName("My First Game");
-        String gameInfo = game1.toString();
+//        //Game instance
+//        Game game1 = new Game();
+//        game1.setName("My First Game");
+//        String gameInfo = game1.toString();
         
         //Creature instance
         Creature indiana = new Creature();
@@ -72,11 +72,13 @@ public class NoOneLeftBehind {
 
        //Out put instances of each class
         System.out.println(playerInfo);
-        System.out.println(gameInfo);
+        //System.out.println(gameInfo);
         System.out.println(creatInfo);
         System.out.println(mapInfo);
         
-        
+        //Test GateKeeper and Gate Puzzle
+        GateKeeper testPuzzle = new GateKeeper();
+        boolean test = testPuzzle.givePuzzle();
     }
     
 }

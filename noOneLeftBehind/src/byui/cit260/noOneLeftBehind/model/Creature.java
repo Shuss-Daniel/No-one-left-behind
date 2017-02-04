@@ -27,6 +27,7 @@ public class Creature implements Serializable{
     //Constructor
     public Creature() {
         this.inventory = new HashMap<>();
+        this.hitPoints = hitPoints;
     }
     
     //Getter and setters

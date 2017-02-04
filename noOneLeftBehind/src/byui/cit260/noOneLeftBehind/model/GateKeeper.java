@@ -9,6 +9,7 @@
 
 package byui.cit260.noOneLeftBehind.model;
 
+import byui.cit260.noOneLeftBehind.control.*;
 import java.io.Serializable;
 
 /**
@@ -62,6 +63,19 @@ public class GateKeeper implements Serializable{
             return false;
         }
         return true;
+    }
+    
+    public boolean givePuzzle(){
+        GatePuzzle newPuzzle = new GatePuzzle();
+        boolean check = newPuzzle.checkGatePuzzle(10, 70, 1000, 30);
+        if(check){
+            System.out.println("Correct!!");
+            return true;
+        }
+        else {
+            System.out.println("You fail");
+            return false;
+        }
     }
     
 }
