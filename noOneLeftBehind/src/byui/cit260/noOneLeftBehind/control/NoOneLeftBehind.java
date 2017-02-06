@@ -35,7 +35,7 @@ public class NoOneLeftBehind {
         Room room1 = new Room();
         
         //savePlayer instance
-        savePlayer player1 = new savePlayer();
+        SavePlayer player1 = new SavePlayer();
         player1.setName("BillyBob");
         player1.setScore(7);
         String playerInfo = player1.toString();
